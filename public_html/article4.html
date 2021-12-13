@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Fathers of Internet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+<body>
+<div id="primary_container">
+
+    <!--There is where the navigation will go-->
+    <div id="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/logo.png" alt="Logo"></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="founders.html">Fathers of Internet</a></li>
+                        <li><a href="origin.html">Origin</a></li>
+                        <li><a href="arpa2inter.html">Arpanet to Internet</a></li>
+                        <li><a href="growth.html">Growth</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="article1.html">Article1</a></li>
+                                <li><a href="article2.html">Article2</a></li>
+                                <li><a href="article3.html">Article3</a></li>
+                                <li><a href="article4.html">Article4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--There is where the body content will go-->
+    <div id="founder-content" class="container-fluid">
+        <div class="container text-center">
+            <p class="h1">SOLID Object Oriented Design</p>
+            <br/>
+            <p class="text-justify lead">
+                SOLID is a mnemonic abbreviation for a set of design principles created for software development in object-oriented languages. The principles in SOLID are intended to foster simpler, more robust and updatable code from software developers. Each letter in SOLID corresponds to a principle for development.
+                When implemented properly it makes your code more extendable, logical and easier to read. To understand SOLID principles, you have to know the use of the interface clearly. I’m going to try to explain SOLID Principles in Python in simplest way so that it’s easy for beginners to understand. It would be very easy to just take the examples provided and apply them to Python.
+            </p>
+            <div class="a1_code">
+                <b>The letters stand for: </b><br/>
+
+                1.	Single Responsibility Principle <br/>
+                2.	Open/Closed Principle <br/>
+                3.	Liskov Substitution Principle <br/>
+                4.	Interface Segregation Principle <br/>
+                5.	Dependency Inversion Principle<br/>
+                Let’s go through each principle one by one:
+            </div>
+
+            <p class="text-justify lead">
+                <b>1. Single Responsibility Principle</b>
+            </p>
+            <p class="text-justify lead">
+                This is probably the most intuitive principle, also true for software components or microservices. Having “only one reason to change” could be restated as having “only one responsibility”. This makes code more robust and flexible, easier to understand for someone else, and you will avoid some unexpected side-effects when changing existing code. You will also need to make fewer changes: the more independent reasons a class has to change, the more often it has to change. If you have lots of classes depending on each other, the number of changes you need to make might grow exponentially. The more complicated your classes are, the more difficult it is to change them without unexpected consequences.
+            </p>
+            <p class="text-justify lead">
+                <b>2. Open-Closed Principle</b>
+            </p>
+            <p class="text-justify lead">
+                This means that I should be able to add new functionality without changing my existing code structure, but by adding new code instead. The goal is to change existing, tested code as little as possible to prevent bugs and having to test everything all over again. If this principle is not followed, the result could be a long list of changes in depending classes, regression on existing features, and unnecessary hours of testing.<br/>
+                This is demonstrated by the following example:<br/>
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article4/img.png" /><br/>
+                In the above example initially the was made up to perform addition and subtraction operations. Now lets say we would want to add some more mathematical operation in this class or file but also we need to make sure we are not making any changes in the code and if there adding new it should not impact existing code.<br/>
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article4/img_1.png" /><br/>
+                We created a separate divide_numbers() now this function will be responsible to perform division operation. Well as the principle states we have extended the code but the code is not modifying or simply we can say its not tightly couple to other.
+
+            </p>
+            <p class="text-justify lead">
+                <b>3. Liskov Substituion Principle</b>
+            </p>
+            <p class="text-justify lead">
+                This principle is by Barbara Liskov, who formulated her principle very formally:<br/>
+                “Let φ(x) be a property provable about objects x of type T. Then φ(y) should be true for objects y of type S where S is a subtype of T.”<br/>
+                This means that if we have a base class T and subclass S, you should be able to substitute the main class T with the subclass S without breaking the code. The interface of a subclass should be the same as the interface of the base class, and the subclass should behave in the same way as the base class.<br/>
+                If you have a method in T that is being overridden in S, then both methods should take the same inputs, and return the same type of output. The subclass can return only a subset of the return values of the base class, but it should accept all the inputs the base class does.
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article4/img_2.png" /><br/>
+                In above diagram, Protocol LoginUseCase define method to be implemented by class. Client who consumes use case should be able to work with both DefaultLoginUseCase , MockLoginUseCase without any change in code.
+            </p>
+            <p class="text-justify lead">
+                <b>4. Interface Segregation Principle</b>
+            </p>
+            <p class="text-justify lead">
+                <i>“Clients should not be forced to depend upon interfaces that they do not use.”</i><br/>
+                If you have a base class with many methods, possibly not all of your subclasses are going to need them, maybe just a few. But due to inheritance, you will be able to call these methods on all the subclasses, even on those that don’t need it. This means a lot of interfaces that are unused, unneeded and will result in bugs when they get accidentally called.<br/>
+                This principle is meant to prevent this from happening. We should make interfaces as small as possible, so that we don’t need to implement functions we don’t need. Instead of one big base class, we should split them into multiple ones. They should only have methods that make sense for each, and then have our subclasses inherit from them.<br/>
+                In the next example, we wil be using abstract methods. Abstract methods create an interface in a base class that have no implementation, but are forced to be implemented in every subclass that inherits from the base class. Abstract methods are essentially enforcing an interface.
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article4/img_3.png" /><br/>
+            </p>
+            <p class="text-justify lead">
+                <b>5. Dependency Inversion Principle</b>
+            </p>
+            <p class="text-justify lead">
+                The last principle says,
+                <i>High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g. interfaces).</i><br/>
+                Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.<br/>
+                If your code has well-defined abstract interfaces, changing the internal implementation of one class shouldn’t break your code. A class it interacts with should not have knowledge of the inner workings of the other class, and should be unaffected as long as the interfaces are the same.
+                An example would be changing the type of database you use (SQL or NoSQL) or changing the data structure you store your data in (dictionary or list).<br/>
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article4/img_4.png" /><br/>
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article4/img_5.png" /><br/>
+                In this example the method made up for returning the last calculation added up to the history. But instead of taking values its taking the values are being returned using interface methods this is what the principle Dependency inversion principle.
+            </p>
+            <p class="text-justify lead">
+                <b>Conclusion</b>
+            </p>
+            <p class="text-justify lead">
+                The SOLID design principles are meant to be a guideline to write maintainable, expandable and easy to understand code. It is worth keeping them in mind next time you think of a design, to write SOLID code. Just go through the letters in your mind, recalling what each of them meant:<br/>
+            </p>
+            <div class="a1_code">
+                1.	Single Responsibility Principle <br/>
+                2.	Open/Closed Principle<br/>
+                3.	Liskov Substitution Principle<br/>
+                4.	Interface Segregation Principle<br/>
+                5.	Dependency Inversion Principle<br/>
+            </div>
+            <p class="text-justify lead">
+                Now go and make the world a better place codebase by codebase!
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--There is where the footer will go-->
+<div id="footer">
+    <footer class="sticky-footer bg-primary container-fluid mt-auto">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span id="github-link" class="text-lead"> <a href="https://github.com/krushna1911/Calc2_ZeroException/tree/part3">GitHub Link</a></span>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span class="text-lead">&copy; Krushna Akhade </span>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span id="W3C_Validator" class="text-lead"> <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fkaproject2.eastus.azurecontainer.io%2Farticle4.html">W3C Validation</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436720/particles.js"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
+<script src="js/myjavascript.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</body>
+</html>

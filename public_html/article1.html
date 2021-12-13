@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Fathers of Internet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+<body>
+<div id="primary_container">
+
+    <!--There is where the navigation will go-->
+    <div id="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/logo.png"
+                                                                   alt="Logo"></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="founders.html">Fathers of Internet</a></li>
+                        <li><a href="origin.html">Origin</a></li>
+                        <li><a href="arpa2inter.html">Arpanet to Internet</a></li>
+                        <li><a href="growth.html">Growth</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles<span
+                                class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="article1.html">Article1</a></li>
+                                <li><a href="article2.html">Article2</a></li>
+                                <li><a href="article3.html">Article3</a></li>
+                                <li><a href="article4.html">Article4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--There is where the body content will go-->
+    <div id="founder-content" class="container-fluid">
+        <div class="container text-center">
+            <p class="h1">Article 1</p>
+            <br/>
+            <p class="text-justify lead">
+                <b>Pylint:</b> Pylint is a Python tool that checks a module for coding standards. PEP8 is the standard
+                and pylint is a good mechanical test to help us in attaining that goal.
+            </p>
+            <p class="text-justify lead">
+                The range of checks run from Python errors, missing docstrings, unused imports, unintended redefinition
+                of built-ins, to bad naming and more.
+            </p>
+            <p class="text-justify lead">
+                Steps to install and implement pylint:
+            </p>
+            <p class="text-justify lead">
+                1. To install pylint run <b><i>pip install pylint</i></b> in the terminal<br/>
+                2. To check current status of pylint<br/>
+                <img class="img-responsive img-thumbnail center-block" alt="article1"
+                     src="images/article1/img.png"/><br/>
+                3. To check version for installed pylint run pylint --version<br/>
+                <img class="img-responsive img-thumbnail center-block" alt="founder_1" src="images/article1/img_1.png"/><br/>
+                4. Now coming to the how to use the pylint, the best way to use pylint is to test individual file from
+                the project.
+                pylint filename<br/>
+                <img class="img-responsive img-thumbnail center-block" alt="founder_1" src="images/article1/img_2.png"/><br/>
+                This will rate your code on a scale of 10. If there are any error in the file it will list it down.
+            </p>
+        </div>
+        <hr/>
+        <!-- OOPS started here -->
+        <div class="container text-center">
+            <p class="h2">Glossary of OOP terms in python</p>
+            <br/>
+            <p class="text-justify lead">
+                <b>Factory:</b> Factory Method is <i>a Creational Design Pattern that allows an interface or a class to
+                create an object, but lets subclasses decide which class or object to instantiate</i>. Here, objects are
+                created without exposing the logic to the client, and for creating the new type of object, the client
+                uses the same common interface.
+            </p>
+            <p class="text-justify lead">
+                <b>Instantiation:</b> Instantiating a class is creating a copy of the class which inherits all class
+                variables and methods. Instantiating a class in Python is simple. To instantiate a class, we simply call
+                the class as if it were a function, passing the arguments that the __init__ method defines. The return
+                value will be the newly created object.<br/>
+
+            </p>
+            <div class="a1_code">
+                <p>
+                    class Foo():<br/>
+                    def __init__(self,x,y):<br/>
+                    print x+y<br/>
+                    f = Foo(3,4)<br/>
+                </p>
+            </div>
+
+            <p class="text-justify lead">
+                <b>Class and Objects:</b> A class is a user-defined blueprint or prototype from which objects are
+                created. Classes provide a means of bundling data and functionality together. Creating a new class
+                creates a new type of object, allowing new instances of that type to be made. Each class instance can
+                have attributes attached to it for maintaining its state. Class instances can also have methods (defined
+                by their class) for modifying their state.<br/>
+                An Object is an instance of a Class. A class is like a blueprint while an instance is a copy of the
+                class with actual values.
+            </p>
+            <div class="a1_code">
+                <p>
+                    <b>class Dog: </b><br/>
+                    attr1 = "mammal"<br/>
+                    attr2 = "dog"<br/>
+                    def fun(self): <br/>
+                    print("I'm a", self.attr1) <br/>
+                    print("I'm a", self.attr2) <br/>
+                    # Object instantiation<br/>
+                    <b>Rodger = Dog()</b><br/>
+                    print(Rodger.attr1) <br/>
+                    Rodger.fun()<br/>
+                </p>
+            </div>
+            <p class="text-justify lead">
+                In the above example, an object is created which is basically a dog named Rodger. This class only has
+                two class attributes that tell us that Rodger is a dog and a mammal.
+            </p>
+            <p class="text-justify lead">
+                <b>namespace:</b> A namespace is a system that has a unique name for each and every object in Python. An
+                object might be a variable or a method. Python itself maintains a namespace in the form of a Python
+                dictionary. Let’s go through an example, a directory-file system structure in computers. Needless to
+                say, that one can have multiple directories having a file with the same name inside every directory. But
+                one can get directed to the file, one wishes, just by specifying the absolute path to the file.
+            </p>
+            <div class="a1_code">
+                <p>
+                    # var1 is in the global namespace<br/>
+                    var1 = 5<br/>
+                    def some_func():<br/>
+                    # var2 is in the local namespace<br/>
+                    var2 = 6<br/>
+                    def some_inner_func():<br/>
+                    # var3 is in the nested local namespace<br/>
+                    var3 = 7<br/>
+                </p>
+            </div>
+            <p class="text-justify lead">
+                <b>Constructor:</b> Constructors are generally used for instantiating an object. The task of
+                constructors is to initialize(assign values) to the data members of the class when an object of the
+                class is created. In Python the __init__() method is called the constructor and is always called when an
+                object is created.
+            </p>
+            <div class="a1_code">
+                <p>
+                    def __init__(self):<br/>
+                    # body of the constructor
+                </p>
+                <p class="text-justify lead">
+                    This is default constructor, but constructor also can be parameterized.
+                </p>
+                <p class="text-justify lead">
+                    <b>Fixtures:</b> Fixtures are functions, which will run before each test function to which it is
+                    applied. Fixtures are used to feed some data to the tests such as database connections, URLs to test
+                    and some sort of input data. Therefore, instead of running the same code for every test, we can
+                    attach fixture function to the tests and it will run and return the data to the test before
+                    executing each test.
+                </p>
+                <div class="a1_code">
+                    <p>
+                        @pytest.fixture <br/>
+                        def input_value(): <br/>
+                        input = 39 <br/>
+                        return input <br/>
+                        def test_divisible_by_3(input_value): <br/>
+                        assert input_value % 3 == 0
+                    </p>
+                </div>
+                <p class="text-justify lead">
+                    <b>type hint:</b> Python is a dynamically typed language, which means you never have to explicitly
+                    indicate what kind of types variable has. But in some cases, dynamic typing can lead to some bugs
+                    that are very difficult to debug and in those cases, Type Hints or Static Typing can be convenient.
+                    Type Hints has been introduced as a new feature in Python 3.5.
+                    <br/>
+                    we have to use a static type checker that analyzes our code and tries to detect if we are violating
+                    our Type-Hints or not.
+                    <br/>
+                    The best known type checker is “mypy“. We can install it by simply using pip .
+                </p>
+                <div class="a1_code">
+                    <p>
+                        # factorial function <br/>
+                        def factorial(i: int) -> int: <br/>
+                        if i&#60;0: <br/>
+                        return None <br/>
+                        if i == 0: <br/>
+                        return 1 <br/>
+                        return i * factorial(i-1) <br/>
+                        # passing a fraction to the function <br/>
+                        print(factorial(5.01))
+                    </p>
+                </div>
+                <p class="text-justify lead">
+                    In this example we have passed floating value even after hinting for integer it will give an error
+                    with specific msg. Argument 1 to factorial has incompatible type float; expected int ” and which is
+                    a very clear message.
+                </p>
+                <p class="text-justify lead">
+                    <b>Type cast:</b> Type Casting is the method to convert the variable data type into a certain data
+                    type in order to the operation required to be performed by users.<br/>
+                    There can be two types of Type Casting in python:<br/>
+                    <b>Implicit:</b> Python converts data type into another data type automatically. In this process,
+                    users don’t have to involve in this process.<br/>
+                </p>
+                <div class="a1_code">
+                    <p>
+                        a = 7<br/>
+                        print(type(a)) <br/>
+                        b = 3.0<br/>
+                        print(type(b)) <br/>
+                        c = a + b<br/>
+                        print(c) <br/>
+                        print(type(c)) <br/>
+                        <br/>
+                    </p>
+                </div>
+                <p class="text-justify lead">
+                    In this we are adding the integer and float value which results in as the float.
+                </p>
+                <p class="text-justify lead">
+                    <b>Explicit:</b> Python need user involvement to convert the variable data type into certain data
+                    type in order to the operation required.<br/>
+                </p>
+                <div class="a1_code">
+                    <p>
+                        a = 5<br/>
+                        n = float(a)<br/>
+                        print(n)<br/>
+                        print(type(n))
+                    </p>
+                </div>
+                <p class="text-justify lead">
+                    Here in this example we have type cast the integer a into the float explicitly.
+                </p>
+                <p class="text-justify lead">
+                    <b>Unit Test:</b> Unit Testing is the first level of software testing where the smallest testable
+                    parts of a software are tested. This is used to validate that each unit of the software performs as
+                    designed.
+                </p>
+                <div class="a1_code">
+                    <p>
+                        import unittest <br/>
+                        class SimpleTest(unittest.TestCase): <br/>
+                        # Returns True or False. <br/>
+                        def test(self): <br/>
+                        self.assertTrue(True) <br/>
+                        if __name__ == '__main__': <br/>
+                        unittest.main()
+                    </p>
+                </div>
+                <p class="text-justify lead">
+                    This is the basic test code using unittest framework, which is having a single test. This test()
+                    method will fail if TRUE is ever FALSE.
+                    <br/>
+                    <b>Outcomes Possible :</b><br/>
+                    OK - All the tests are passed<br/>
+                    Fail - AssertionError exception<br/>
+                    Error - exception other than AssertionError<br/>
+                </p>
+                <p class="text-justify lead">
+                    <b>Static Variables:</b> When we declare a variable inside a class, but outside the method, it is
+                    called a static or class variable. It can be called directly from a class but not through the
+                    instances of a class. However, the static variables are quite different from the other member, and
+                    it does not conflict with the same variable name in the Python program.
+                </p>
+                <div class="a1_code">
+                    <p class="text-justify lead">
+                        class Employee:<br/>
+                        dept = 'Information Technology' #Define static/class variable<br/>
+                        print (Employee.dept)
+                    </p>
+                </div>
+                <p class="text-justify lead">
+                    <b>Static Methods:</b> Python has a static method that belongs to the class. It is just like a
+                    static variable that bounds to the class rather than the class's object. A static method can be
+                    called without creating an object for the class. It means we can directly call the static method
+                    with the reference of the class name. Furthermore, a static method is constrained with a class;
+                    hence it cannot change the state of an object.
+                    A <b>@staticmethod </b>is an inbuilt decorator that defines the static method inside the class. It
+                    does not receive any argument as a reference to a class instance or a class calling the static
+                    method itself.
+                </p>
+                <div class="a1_code">
+                    <p>
+                        class Marks:<br/>
+                        @staticmethod<br/>
+                        def Math_num(a, b): # define the static function<br/>
+                        return a + b<br/>
+                        print (" Total Marks in Maths" , Marks.Math_num(64, 28))<br/>
+                        <br/>
+                        <b>Output:</b><br/>
+                        Total Marks in Maths 92
+                    </p>
+                </div>
+                <p class="text-justify lead">
+                    <b>Class method:</b> The class method in Python is a method, which is bound to the class but not the
+                    object of that class. The class method takes cls (class) as first argument. Class method can access
+                    and modify the class state.
+                </p>
+                <div class="a1_code">
+                    <p>
+                        class my_class:<br/>
+                        @classmethod<br/>
+                        deffunction_name(cls, arguments):<br/>
+                        #Function Body<br/>
+                        return value
+                    </p>
+                </div>
+                <p class="text-justify lead">
+                    <b>Facade:</b> The Facade Pattern is a structural design pattern. It provides a simplified interface
+                    to a set of other interfaces, abstractions and implementations within a system that may be full of
+                    complexity and/or tightly coupled.
+                </p>
+                <div class="a1_code">
+                    <p>
+                        class SubSystemClassA:<br/>
+                        @staticmethod<br/>
+                        def method():<br/>
+                        return "A"<br/>
+                        <br/>
+
+                        class SubSystemClassB:<br/>
+                        @staticmethod<br/>
+                        def method():<br/>
+                        return "B"<br/>
+                        <br/>
+                        class Facade:<br/>
+                        def __init__(self):<br/>
+                        self.sub_system_class_a = SubSystemClassA()<br/>
+                        self.sub_system_class_b = SubSystemClassB()<br/>
+                        <br/>
+                        def create(self):<br/>
+                        result = self.sub_system_class_a.method()<br/>
+                        result += self.sub_system_class_b.method()<br/>
+                        return result<br/>
+                        <br/>
+                        FACADE = Facade()<br/>
+                        RESULT = FACADE.create()<br/>
+                        print("The Result = %s" % RESULT)<br/>
+                        <br/>
+                        <b>Output:</b><br/>
+                        The Result is = AB
+                    </p>
+                </div>
+                <p class="text-justify lead">
+                    <b>Design Patterns:</b> Design Patterns is the most essential part of Software Engineering, as they
+                    provide the general repeatable solution to a commonly occurring problem in software design. They
+                    usually represent some of the best practices adopted by experienced object-oriented software
+                    developers.
+                </p>
+                <p class="text-justify lead">
+                    <b>Creational Design Pattern:</b> Creational patterns provides essential information regarding the
+                    Class instantiation or the object instantiation. Class Creational Pattern and the Object Creational
+                    pattern is the major categorization of the Creational Design Patterns. While class-creation patterns
+                    use inheritance effectively in the instantiation process, object-creation patterns use delegation
+                    effectively to get the job done.<br/>
+                </p>
+                <div class="a1_code">
+                    <b>Classification of Creational Design Patterns</b> –<br/>
+                    Factory Method<br/>
+                    Abstract Factory Method<br/>
+                    Builder Method<br/>
+                    Prototype Method<br/>
+                    Singleton Method
+                </div>
+
+
+                <p class="text-justify lead">
+                    <b>Structural Design Patterns:</b> Structural design patterns are about organizing different classes
+                    and objects to form larger structures and provide new functionality while keeping these structures
+                    flexible and efficient.
+                    Mostly they use Inheritance to compose all the interfaces.
+                    It also identifies the relationships which led to the simplification of the structure.<br/>
+
+                </p>
+                <div class="a1_code">
+                    <b>Classification of Structural Design Patterns</b> –<br/>
+                    Adapter Method <br/>
+                    Bridge Method<br/>
+                    Composite Method<br/>
+                    Decorator Method<br/>
+                    Facade Method<br/>
+                    Proxy Method<br/>
+                    FlyWeight Method
+                </div>
+                <p class="text-justify lead">
+                    <b>Behavioral Design Pattern:</b> Behavioral patterns are all about identifying the common
+                    communication patterns between objects and realize these patterns. These patterns are concerned with
+                    algorithms and the assignment of responsibilities between objects.<br/>
+
+                </p>
+                <div class="a1_code">
+                    <b>Classification of Behavioral Design Patterns –</b><br/>
+                    Chain of Responsibility Method<br/>
+                    Command Method<br/>
+                    Iterator Method<br/>
+                    Mediator Method<br/>
+                    Memento Method<br/>
+                    Observer Method<br/>
+                    State Method<br/>
+                    Strategy Method<br/>
+                    Template Method<br/>
+                    Visitor Method
+                </div>
+                <p class="text-justify lead">
+                    <b>Proprty:</b> Python programming provides us with a built-in @property decorator which makes usage
+                    of getter and setters much easier in Object-Oriented Programming.<br/>
+                </p>
+                <div class='a1_code'>
+                    <p>
+                        class Celsius:<br/>
+                        def __init__(self, temperature=0):<br/>
+                        self.temperature = temperature<br/>
+
+                        def to_fahrenheit(self):<br/>
+                        return (self.temperature * 1.8) + 32<br/>
+
+                        # Create a new object<br/>
+                        human = Celsius()<br/>
+
+                        # Set the temperature<br/>
+                        human.temperature = 37<br/>
+
+                        print(human.temperature)<br/>
+                        print(human.to_fahrenheit())<br/>
+
+                        <b>Output:</b><br/>
+                        37<br/>
+                        98.60000000000001<br/>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--There is where the footer will go-->
+    <div id="footer">
+        <footer class="sticky-footer bg-primary container-fluid mt-auto">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <span id="github-link" class="text-lead"> <a
+                                href="https://github.com/krushna1911/Calc2_ZeroException/tree/part3">GitHub Link</a></span>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <span class="text-lead">&copy; Krushna Akhade </span>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <span id="W3C_Validator" class="text-lead"> <a
+                                href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fkaproject2.eastus.azurecontainer.io%2Farticle1.html">W3C Validation</a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436720/particles.js"></script>
+    <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
+    <script src="js/myjavascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</div>
+</body>
+</html>

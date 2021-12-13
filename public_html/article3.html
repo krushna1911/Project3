@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Fathers of Internet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+<body>
+<div id="primary_container">
+
+    <!--There is where the navigation will go-->
+    <div id="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/logo.png" alt="Logo"></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="founders.html">Fathers of Internet</a></li>
+                        <li><a href="origin.html">Origin</a></li>
+                        <li><a href="arpa2inter.html">Arpanet to Internet</a></li>
+                        <li><a href="growth.html">Growth</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="article1.html">Article1</a></li>
+                                <li><a href="article2.html">Article2</a></li>
+                                <li><a href="article3.html">Article3</a></li>
+                                <li><a href="article4.html">Article4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--There is where the body content will go-->
+    <div id="founder-content" class="container-fluid">
+        <div class="container text-center">
+            <p class="h1">Article 3</p>
+            <br/>
+            <p class="text-justify lead">
+                <b>Encapsulation:</b> Encapsulation is one of the fundamental concepts in object-oriented programming (OOP). It describes the idea of wrapping data and the methods that work on data within one unit. This puts restrictions on accessing variables and methods directly and can prevent the accidental modification of data. To prevent accidental change, an object’s variable can only be changed by an object’s method. Those types of variables are known as private variable. A class is an example of encapsulation as it encapsulates all the data that is member functions, variables, etc.
+            </p>
+            <p class="text-justify lead">
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article3/img.png" /><br/>
+                In this example the variable result initialized in the class but it got used inside the method get_result, due to encapsulation we defined a separate method to use it.
+            </p>
+            <p class="text-justify lead">
+                <b>Abstraction:</b> Abstraction is used to hide the internal functionality of the function from the users. The users only interact with the basic implementation of the function, but inner working is hidden. User is familiar with that "what function does" but they don't know "how it does."
+            </p>
+            <p class="text-justify lead">
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article3/img_1.png" /><br/>
+                In this example the variable result initialized in the class but it got used inside the method get_result, due to encapsulation we defined a separate method to use it.
+            </p>
+            <p class="text-justify lead">
+                In the above example we have a class Calc which is an abstract class containing abstract method divide_numbers() which is not implemented in the same class.
+                We have defined a new class Division and inherited abstract class properties into it. The method divide_numbers() actually got implemented in the Division class.
+            </p>
+            <p class="text-justify lead">
+                <b>Inheritance:</b> Inheritance models what is called an is a relationship. This means that when you have a Derived class that inherits from a Base class, you created a relationship where Derived is a specialized version of Base.
+            </p>
+            <p class="text-justify lead">
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article3/img_3.png" /><br/>
+                We have created a parent/base class Calculation where we have self references these are instance properties would get shared with child class.
+            </p>
+            <p class="text-justify lead">
+                Now lets come to the child class Division.<br/>
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article3/img_4.png" /><br/>
+                Here, Division class which is the child class inheriting the self instances from the base class Calculation.
+            </p>
+            <p class="text-justify lead">
+                <b>Polymorphism:</b> Polymorphism means multiple forms. In python we can find the same operator or function taking multiple forms. It also useful in creating different classes which will have class methods with same name. That helps in re using a lot of code and decreases code complexity. Polymorphism is also linked to inheritance as we will see in some examples below.<br/>
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article3/polymorphism/img.png" /><br/>
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article3/polymorphism/img_1.png" /><br/>
+                <img class="img-responsive img-thumbnail center-block" alt="article1" src="images/article3/polymorphism/img_2.png" /><br/>
+                The best example for polymorphism in our calculator is the method get_result() used in all the classes such as Subtraction, Addition, Division and Multiplication. We are using same method for the different mathematical operation with respective classes.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!--There is where the footer will go-->
+<div id="footer">
+    <footer class="sticky-footer bg-primary container-fluid mt-auto">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span id="github-link" class="text-lead"> <a href="https://github.com/krushna1911/Calc2_ZeroException/tree/part3">GitHub Link</a></span>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span class="text-lead">&copy; Krushna Akhade </span>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <span id="W3C_Validator" class="text-lead"> <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fkaproject2.eastus.azurecontainer.io%2Farticle3.html">W3C Validation</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436720/particles.js"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
+<script src="js/myjavascript.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</body>
+</html>

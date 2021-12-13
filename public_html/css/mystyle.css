@@ -7,6 +7,10 @@
     font-size:120%;
 }
 
+.navbar-fixed-top{
+    background-color: #eee;
+}
+
 @media (max-width: 991px) {
     .navbar-header {
         float: none;
@@ -60,9 +64,13 @@ a:hover {
 }
 
 html,body{
-    height: 100%;
-    margin:0;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
 }
+
 
 .jumbotron {
     color: white;
@@ -98,10 +106,73 @@ html,body{
     transform: translate(-50%,-50%)
 }
 
-#footer{
-    height: 2vh;
-    font-size: 1vh;
+#primary_container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+.green-contact-form {
+    margin:0 auto;
+    border-radius:10px;
+}
+
+.title-form {
+    max-width: 550px;
+}
+#content, #founder-content, #arpa2inter-content, #origin-content, #aboutus-content, #growth-content{
+    padding-top:50px;
+    flex-grow: 1;
+}
+
+.title-form {
+    max-width: 550px;
+}
+/*
+<!-- arpa2internet -->
+ */
+.heading3{
+    text-align: center;
+
+}
+
+/*Arpa2Internet*/
+.heading3{
+    text-align: center;
+
+}
+
+#paper_link{
+    color:inherit;
+}
+
+#paper_link:hover{
+    background-color: #eee;
+}
+
+#growth-content{
+    width:80%;
+}
+
+#footer{
+    font-size: 110%;
+    bottom:0;
+    width:100%;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+#code_data {
+    display: block;
+    overflow: hidden;
+    resize: none;
+}
+.a1_code{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 20px
+}
 
 

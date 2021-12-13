@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <title>Fathers of Internet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mystyle.css">
+
+</head>
+<body>
+<div id="primary_container">
+
+  <!--There is where the navigation will go-->
+  <div id="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/logo.png" alt="Logo"></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="founders.html">Fathers of Internet</a></li>
+            <li><a href="origin.html">Origin</a></li>
+            <li><a href="arpa2inter.html">Arpanet to Internet</a></li>
+            <li><a href="growth.html">Growth</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="article1.html">Article1</a></li>
+                <li><a href="article2.html">Article2</a></li>
+                <li><a href="article3.html">Article3</a></li>
+                <li><a href="article4.html">Article4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--There is where the body content will go-->
+  <div id="founder-content" class="container-fluid">
+    <div class="container text-center">
+      <p class="h1">AAA Testing</p>
+      <br/>
+      <p class="text-justify lead">
+        Arrange-Act-Assert is a great way to structure test cases. It prescribes an order of operations:
+      </p>
+      <p class="text-justify lead">
+        <b>Arrange</b> inputs and targets. Arrange steps should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all of these operations at the start of the test.
+      </p>
+      <p class="text-justify lead">
+        <b>Act</b> on the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.
+      </p>
+      <p class="text-justify lead">
+        <b>Assert </b> expected outcomes. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails.
+      </p>
+      <p class = "text-justify lead">
+        Need to show screenshot of Division code for explanation:
+      </p>
+      <img class="img-responsive img-thumbnail center-block" alt="founder_1" src="images/article2/img.png" /><br/>
+      <br/><br/>
+      <img class="img-responsive img-thumbnail center-block" alt="founder_1" src="images/article2/img_1.png" /><br/>
+      <br/>
+      <p class = "text-justify lead">
+        In this example there is a class Addition which has defined set of code which can perform an addition operation. To test it we have create test_calculation_addition() which is structured in a form of AAA.
+      </p>
+      <p class = "text-justify lead">
+        #Arange taking the list of inputs which further passed as a parameters to #Act. #Act will invoke the methods from Addition by creating its object. And at last #Assert we have passed some value if operation doesn’t match with assert value then it will fail the test case and throw exception.
+      </p>
+      <p class="text-justify lead">
+        <b>Need to add importance of AAA</b>
+      </p>
+      <p class = "text-justify lead">
+        Testing is a process or steps of an analysing code in order to detect the state of disagreement between actual and required / expected conditions. <br/>
+        It’s not a secret that an absolute key to developing quality software is to test your code as you write it. After all, source code of your Python application must be bug-free to function correctly, but all human beings generate bugs at a very high rate when writing code. <br/>
+        Testing in Python should be performed starting from the first stages and throughout the whole process of development. Tests are written to detect bugs early in the development of the application when bugs are less frequent and less expensive to fix. However, if unit tests are not designed well, or they are run incorrectly, bugs go through into the production stage. Skipping unit testing in the development process will surely cost your company thousands, if not hundreds of thousands of dollars depending on the scale of the project.
+      </p>
+      <p class="text-justify lead">
+        <b>KEY ADVANTAGES OF PYTHON TESTING ARE:</b><br/><br/>
+        <b>Detecting problems early </b>- Unit tests disclose problems early into the development.<br/>
+        <b>Mitigating change </b>- Allows the developer to refactor the source code during the testing stage and later on, while still making sure the module works as expected.<br/>
+        <b>Simplifying integration </b>- By testing the separate components of an application first and then testing them altogether, integration testing becomes much easier.<br/>
+        <b>Source of Documentation </b>- The testing with doctest provides a better insight.<br/>
+        Also, tests can be run quickly, easily, and as frequently as the project requires it. They serve as executable documentation for the application, and they also serve as an invaluable reminder of bugs you've fixed in the past. As such, they decrease the development time, thus allow to quickly deliver functional code - and that's really the bottom line.
+      </p>
+      <p class="text-justify lead">
+        <b>Use of external data for testing</b><br/>
+        The Python standard library includes the unittest module to help you write and run tests for your Python code. Tests written using the unittest module can help you find bugs in your programs, and prevent regressions from occurring as you change your code over time. Teams adhering to test-driven development may find unittest useful to ensure all authored code has a corresponding set of tests.<br/>
+        A simple way to store big data sets is to use CSV files (comma separated files).CSV files contains plain text and is a well know format that can be read by everyone including Pandas. read_csv() method enable you to work with files effectively. You can use them to save the data and labels from Pandas objects to a file and load them later as Pandas Series or DataFrame instances.<br/>
+        Steps for running external data csv for testing:<br/>
+        1. Install Pandas -- pip install pandas <br/>
+        2. Preparing the csv data -- Creating the csv file for loading in the python project<br/>
+        3. Using the Pandas read_csv() and .to_csv() Function -- A comma-separated values (CSV) file is a plaintext file with a .csv extension that holds tabular data. This is one of the most popular file formats for storing large amounts of data. Each row of the CSV file represents a single table row. The values in the same row are by default separated with commas, but you could change the separator to a semicolon, tab, space, or some other character.<br/>
+        4. Reading the csv files -- Pandas functions for reading the contents of files are named using the pattern .read_[file-type](), where [file-type] indicates the type of the file to read. <br/>
+        5. Writing the csv files -- Once you have those packages installed, you can save your DataFrame in an Excel file with .to_excel(). <br/>
+        In this way, we can use the pandas library from loading the data and labels from Pandas DataFrame objects to different kinds of files. The function read_csv() and .to_csv() allows us to load our data in the single function or method call.
+
+      </p>
+    </div>
+    <hr/>
+  </div>
+</div>
+
+  <!--There is where the footer will go-->
+  <div id="footer">
+    <footer class="sticky-footer bg-primary container-fluid mt-auto">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <span id="github-link" class="text-lead"> <a href="https://github.com/krushna1911/Calc2_ZeroException/tree/part3">GitHub Link</a></span>
+          </div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <span class="text-lead">&copy; Krushna Akhade </span>
+          </div>
+
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <span id="W3C_Validator" class="text-lead"> <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fkaproject2.eastus.azurecontainer.io%2Farticle2.html">W3C Validation</a></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436720/particles.js"></script>
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1561436735/app.js"></script>
+<script src="js/myjavascript.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+</body>
+</html>
