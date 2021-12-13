@@ -1,14 +1,19 @@
 version: "3.2"
-
 services:
-  php:
-    image:
-      php:7.4-apache
-  docs:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "8080:80"
+  flask:
+    build: .
+    restart: always
+    environment:
+      - APP_NAME=flask
+    expose:
+      - 8080
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
     volumes:
-      - ./:/app
+      - .:/home/myuser
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
