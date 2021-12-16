@@ -6,7 +6,7 @@ class Calculation:
         """ constructor method"""
         self.values = Calculation.convert_args_to_tuple_of_float(values)
     @classmethod
-    def create(cls,values: tuple):
+    def create(cls, values: tuple):
         """ factory method"""
         return cls(values)
     @staticmethod

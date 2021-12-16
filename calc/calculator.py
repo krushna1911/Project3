@@ -1,6 +1,7 @@
 """ This is the increment function"""
 from calc.history.calculations import Calculations
 
+
 #the calculator class just contains the methods to calculate
 class Calculator:
     """ This is the Calculator class"""
@@ -26,3 +27,12 @@ class Calculator:
         """ multiplication number from result"""
         Calculations.add_multiplication_calculation_to_history(tuple_values)
         return True
+    @staticmethod
+    def division(tuple_values: tuple):
+        """ division number from result"""
+        Calculations.add_division_calculation_to_history(tuple_values)
+        return True
+    @staticmethod
+    def get_last_value():
+        """result of the calculation"""
+        return Calculations.get_last_calculation_result_value()

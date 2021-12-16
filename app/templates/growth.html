@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock %}
+{% block head %}
+{{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+
+    <!--There is where the body content will go-->
+    <div id="growth-content" class="container-fluid">
+        <div class="row">
+            <p class="h1 text-center">
+                Growth of Internet
+            </p>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col-md-1 col-sm-1 col-xs-12">
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-12">
+                <p class="text-center lead">
+                    The following page shows the growth of internet from the period December 1969 to October 1989.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-12"></div>
+                <div class="col-md-8 col-sm-8 col-xs-12">
+                    <img id= "growth-gif" class="img-responsive" src="static/video/final.gif" alt="final">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
